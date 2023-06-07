@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(uniquePaths(1, 1))
+	fmt.Println(uniquePaths(3, 7))
 }
