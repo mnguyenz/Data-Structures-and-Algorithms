@@ -17,13 +17,3 @@ func minFallingPathSum(matrix [][]int) int {
 	}
 	return minArr(matrix[0])
 }
-
-func minArr(arr []int) int {
-	minVal := arr[0]
-	for i := 1; i < len(arr); i++ {
-		if arr[i] < minVal {
-			minVal = arr[i]
-		}
-	}
-	return minVal
-}

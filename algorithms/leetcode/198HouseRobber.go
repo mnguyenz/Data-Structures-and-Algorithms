@@ -13,10 +13,3 @@ func rob(nums []int) int {
 	}
 	return max(nums[len(nums)-1], nums[len(nums)-2])
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}

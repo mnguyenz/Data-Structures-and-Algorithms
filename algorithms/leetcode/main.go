@@ -10,5 +10,5 @@ func main() {
 	// 	{-1, -1, -2, -3},
 	// }
 	// fmt.Println(countNegatives(grid))
-	fmt.Println(buddyStrings("abccd", "abddc"))
+	fmt.Println(gcdOfStrings("LEET", "CODE"))
 }

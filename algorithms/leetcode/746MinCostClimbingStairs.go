@@ -6,10 +6,3 @@ func minCostClimbingStairs(cost []int) int {
 	}
 	return min(cost[len(cost)-1], cost[len(cost)-2])
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
