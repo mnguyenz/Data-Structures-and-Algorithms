@@ -14,6 +14,16 @@ func min(a, b int) int {
 	return b
 }
 
+func maxArr(arr []int) int {
+	maxVal := arr[0]
+	for i := 1; i < len(arr); i++ {
+		if arr[i] > maxVal {
+			maxVal = arr[i]
+		}
+	}
+	return maxVal
+}
+
 func minArr(arr []int) int {
 	minVal := arr[0]
 	for i := 1; i < len(arr); i++ {
