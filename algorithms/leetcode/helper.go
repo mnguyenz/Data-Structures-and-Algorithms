@@ -30,3 +30,23 @@ func gcd(a, b int) int {
 	}
 	return a
 }
+
+func hasDuplicateChars(s string) bool {
+	seenChars := make(map[rune]bool)
+	for _, char := range s {
+		if seenChars[char] {
+			return true
+		}
+		seenChars[char] = true
+	}
+	return false
+}
+
+func checkExistedInArray(arr []int, val int) bool {
+	for _, v := range arr {
+		if v == val {
+			return true
+		}
+	}
+	return false
+}

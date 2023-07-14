@@ -56,14 +56,3 @@ func buddyStrings(s string, goal string) bool {
 	}
 	return result
 }
-
-func hasDuplicateChars(s string) bool {
-	seenChars := make(map[rune]bool)
-	for _, char := range s {
-		if seenChars[char] {
-			return true
-		}
-		seenChars[char] = true
-	}
-	return false
-}
