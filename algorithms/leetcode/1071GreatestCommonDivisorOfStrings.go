@@ -40,7 +40,7 @@ func gcdOfStrings(str1 string, str2 string) string {
 		return false
 	}
 
-	for i := min(len1, len2); i > 0; i-- {
+	for i := Min(len1, len2); i > 0; i-- {
 		if isDivisor(i) {
 			return str1[:i]
 		}
@@ -53,6 +53,6 @@ func gcdOfStrings2(str1 string, str2 string) string {
 	if str1+str2 != str2+str1 {
 		return ""
 	}
-	gcd := gcd(len(str1), len(str2))
+	gcd := Gcd(len(str1), len(str2))
 	return str1[:gcd]
 }

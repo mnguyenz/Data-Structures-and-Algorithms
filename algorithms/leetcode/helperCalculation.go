@@ -1,20 +1,22 @@
 package main
 
-func max(a, b int) int {
+import "sort"
+
+func Max(a, b int) int {
 	if a > b {
 		return a
 	}
 	return b
 }
 
-func min(a, b int) int {
+func Min(a, b int) int {
 	if a < b {
 		return a
 	}
 	return b
 }
 
-func maxArr(arr []int) int {
+func MaxArr(arr []int) int {
 	maxVal := arr[0]
 	for i := 1; i < len(arr); i++ {
 		if arr[i] > maxVal {
@@ -24,7 +26,7 @@ func maxArr(arr []int) int {
 	return maxVal
 }
 
-func minArr(arr []int) int {
+func MinArr(arr []int) int {
 	minVal := arr[0]
 	for i := 1; i < len(arr); i++ {
 		if arr[i] < minVal {
@@ -34,14 +36,15 @@ func minArr(arr []int) int {
 	return minVal
 }
 
-func gcd(a, b int) int {
+// Greatest common divisor
+func Gcd(a, b int) int {
 	for b != 0 {
 		a, b = b, a%b
 	}
 	return a
 }
 
-func hasDuplicateChars(s string) bool {
+func HasDuplicateChars(s string) bool {
 	seenChars := make(map[rune]bool)
 	for _, char := range s {
 		if seenChars[char] {
@@ -52,11 +55,17 @@ func hasDuplicateChars(s string) bool {
 	return false
 }
 
-func checkExistedInArray(arr []int, val int) bool {
+func CheckExistedInArray(arr []int, val int) bool {
 	for _, v := range arr {
 		if v == val {
 			return true
 		}
 	}
 	return false
+}
+
+func SortIntervalsByFirstElement(intervals [][]int) {
+	sort.Slice(intervals, func(i, j int) bool {
+		return intervals[i][1] < intervals[j][1]
+	})
 }

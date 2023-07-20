@@ -29,7 +29,7 @@ func longestSubsequence1(arr []int, difference int) int {
 	subsequence := 1
 	selected := []int{}
 	for i := 0; i < len(arr)-1; i++ {
-		if !checkExistedInArray(selected, arr[i]) {
+		if !CheckExistedInArray(selected, arr[i]) {
 			endSubsequence := arr[i]
 			for j := i + 1; j < len(arr); j++ {
 				if arr[j]-endSubsequence == difference {
@@ -38,7 +38,7 @@ func longestSubsequence1(arr []int, difference int) int {
 					subsequence += 1
 				}
 			}
-			result = max(subsequence, result)
+			result = Max(subsequence, result)
 			subsequence = 1
 		}
 	}

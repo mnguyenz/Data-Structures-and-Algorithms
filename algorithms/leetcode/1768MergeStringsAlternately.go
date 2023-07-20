@@ -33,7 +33,7 @@ package main
 
 func mergeAlternately(word1 string, word2 string) string {
 	result := ""
-	for i := 0; i < max(len(word1), len(word2)); i++ {
+	for i := 0; i < Max(len(word1), len(word2)); i++ {
 		if i < len(word1) {
 			result += string(word1[i])
 		}

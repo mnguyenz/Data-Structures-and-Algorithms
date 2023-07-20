@@ -40,7 +40,7 @@ func longestSubarray(nums []int) int {
 	maximum := zerosArr[0]
 	for i := 1; i < len(zerosArr); i++ {
 		current = zerosArr[i] - zerosArr[i-1] - 1
-		maximum = max(maximum, previous+current)
+		maximum = Max(maximum, previous+current)
 		previous = current
 	}
 	return maximum

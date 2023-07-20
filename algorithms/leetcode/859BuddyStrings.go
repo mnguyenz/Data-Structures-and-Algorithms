@@ -30,7 +30,7 @@ func buddyStrings(s string, goal string) bool {
 		return false
 	}
 	if s == goal {
-		if hasDuplicateChars(s) {
+		if HasDuplicateChars(s) {
 			return true
 		}
 		return false

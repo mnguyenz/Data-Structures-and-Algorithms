@@ -28,7 +28,7 @@ func minSubArrayLen(target int, nums []int) int {
 	for right < len(nums) {
 		sum += nums[right]
 		for sum >= target {
-			result = min(result, right-left+1)
+			result = Min(result, right-left+1)
 			sum -= nums[left]
 			left++
 		}

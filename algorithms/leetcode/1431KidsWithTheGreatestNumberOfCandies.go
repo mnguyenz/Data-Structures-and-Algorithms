@@ -30,7 +30,7 @@
 package main
 
 func kidsWithCandies(candies []int, extraCandies int) []bool {
-	max := maxArr(candies)
+	max := MaxArr(candies)
 	result := make([]bool, len(candies))
 	for i, v := range candies {
 		if v+extraCandies >= max {

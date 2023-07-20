@@ -7,7 +7,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func (l *ListNode) addLinkedList(val int) {
+func (l *ListNode) AddLinkedList(val int) {
 	// Create a new node
 	newNode := &ListNode{
 		Val:  val,
@@ -22,14 +22,14 @@ func (l *ListNode) addLinkedList(val int) {
 	current.Next = newNode
 }
 
-func printLinkedList(head *ListNode) {
+func PrintLinkedList(head *ListNode) {
 	for head != nil {
 		fmt.Println(head.Val)
 		head = head.Next
 	}
 }
 
-func lengthLinkedList(n *ListNode) int {
+func LengthLinkedList(n *ListNode) int {
 	var count int
 	for n != nil {
 		n = n.Next

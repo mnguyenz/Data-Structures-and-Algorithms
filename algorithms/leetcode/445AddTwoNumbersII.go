@@ -28,8 +28,8 @@ package main
  * }
  */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	length1 := lengthLinkedList(l1)
-	length2 := lengthLinkedList(l2)
+	length1 := LengthLinkedList(l1)
+	length2 := LengthLinkedList(l2)
 	// l1 must be longer than l2
 	if length1 < length2 {
 		l1, l2 = l2, l1
