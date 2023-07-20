@@ -16,6 +16,13 @@ func Min(a, b int) int {
 	return b
 }
 
+func IsNegativeAndPositive(a, b int) bool {
+	if (a < 0 && b >= 0) || (a >= 0 && b < 0) {
+		return true
+	}
+	return false
+}
+
 func MaxArr(arr []int) int {
 	maxVal := arr[0]
 	for i := 1; i < len(arr); i++ {
