@@ -25,6 +25,6 @@ func main() {
 	// list2.AddLinkedList(4)
 	// PrintLinkedList(addTwoNumbers(list1, list2))
 
-	arr := []int{8, -8}
-	fmt.Println(asteroidCollision(arr))
+	arr := []int{3, 4, 5, 1}
+	fmt.Println(peakIndexInMountainArray(arr))
 }
