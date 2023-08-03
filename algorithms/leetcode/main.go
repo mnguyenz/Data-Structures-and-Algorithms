@@ -25,6 +25,15 @@ func main() {
 	// list2.AddLinkedList(4)
 	// PrintLinkedList(addTwoNumbers(list1, list2))
 
-	arr := []int{3, 4, 5, 1}
-	fmt.Println(peakIndexInMountainArray(arr))
+	// arr := []int{3, 4, 5, 1}
+	// fmt.Println(peakIndexInMountainArray(arr))
+
+	// fmt.Println(combine(4, 2))
+
+	// 46Permutations.go
+	// arr := []int{1, 2, 3}
+	// fmt.Println(permute(arr))
+
+	// 17Combinations.go
+	fmt.Println(letterCombinations("23"))
 }
