@@ -35,5 +35,11 @@ func main() {
 	// fmt.Println(permute(arr))
 
 	// 17Combinations.go
-	fmt.Println(letterCombinations("23"))
+	// fmt.Println(letterCombinations("23"))
+
+	// 74SearchA2DMatrix.go
+	grid := [][]int{
+		{1, 1},
+	}
+	fmt.Println(searchMatrix(grid, 2))
 }
