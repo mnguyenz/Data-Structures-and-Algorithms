@@ -38,8 +38,16 @@ func main() {
 	// fmt.Println(letterCombinations("23"))
 
 	// 74SearchA2DMatrix.go
-	grid := [][]int{
-		{1, 1},
-	}
-	fmt.Println(searchMatrix(grid, 2))
+	// grid := [][]int{
+	// 	{1, 1},
+	// }
+	// fmt.Println(searchMatrix(grid, 2))
+
+	// 33SearchInRotatedSortedArray.go
+	// arr := []int{5, 1, 3}
+	// fmt.Println(search(arr, 5))
+
+	// 81SearchInRotatedSortedArrayII.go
+	arr := []int{1, 0, 1, 1, 1}
+	fmt.Println(search81(arr, 0))
 }
