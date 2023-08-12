@@ -48,6 +48,10 @@ func main() {
 	// fmt.Println(search(arr, 5))
 
 	// 81SearchInRotatedSortedArrayII.go
-	arr := []int{1, 0, 1, 1, 1}
-	fmt.Println(search81(arr, 0))
+	// arr := []int{1, 0, 1, 1, 1}
+	// fmt.Println(search81(arr, 0))
+
+	// 518CoinChangeII.go
+	arr := []int{1, 2, 5}
+	fmt.Println(change(5, arr))
 }
