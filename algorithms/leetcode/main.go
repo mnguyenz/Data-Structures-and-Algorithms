@@ -52,6 +52,9 @@ func main() {
 	// fmt.Println(search81(arr, 0))
 
 	// 518CoinChangeII.go
-	arr := []int{1, 2, 5}
-	fmt.Println(change(5, arr))
+	// arr := []int{1, 2, 5}
+	// fmt.Println(change(5, arr))
+
+	// 242ValidAnagram.go
+	fmt.Println(isAnagram("anagram", "nagaram"))
 }
