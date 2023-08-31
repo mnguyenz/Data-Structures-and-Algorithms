@@ -28,7 +28,7 @@ package main
 import "math"
 
 func asteroidCollision(asteroids []int) []int {
-	stack := make(stack, 0)
+	stack := make(stackInt, 0)
 	for _, v := range asteroids {
 		isValueExist := true
 		for stack.Len() > 0 {

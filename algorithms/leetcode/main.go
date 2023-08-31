@@ -56,5 +56,10 @@ func main() {
 	// fmt.Println(change(5, arr))
 
 	// 242ValidAnagram.go
-	fmt.Println(isAnagram("anagram", "nagaram"))
+	// fmt.Println(isAnagram("anagram", "nagaram"))
+
+	// 125ValidPalindrome.go
+	// fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
+
+	fmt.Println(isValid("()"))
 }
