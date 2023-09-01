@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// grid := [][]int{
 	// 	{4, 3, 2, -1},
@@ -61,5 +59,13 @@ func main() {
 	// 125ValidPalindrome.go
 	// fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
 
-	fmt.Println(isValid("()"))
+	// 20
+	// fmt.Println(isValid("()"))
+
+	// 88
+	nums1 := []int{2, 0}
+	m := 1
+	nums2 := []int{1}
+	n := 1
+	merge(nums1, m, nums2, n)
 }
