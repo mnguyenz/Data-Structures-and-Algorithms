@@ -9,7 +9,7 @@ function randomNumbers(numberOfRandomNumbers: number, min: number, max: number):
       numbers.push(rn);
     }
   }
-  return numbers;
+  return numbers.sort((a, b) => a - b);
 };
 
 function getRandomNumber(min: number, max: number): number {
