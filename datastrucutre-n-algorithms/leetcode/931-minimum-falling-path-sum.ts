@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/minimum-falling-path-sum/?envType=study-plan-v2&envId=dynamic-programming
+// https://leetcode.com/problems/minimum-falling-path-sum/description/?envType=daily-question&envId=2024-01-19
 
 // Given an n x n array of integers matrix, return the minimum sum of any falling path through matrix.
 
@@ -26,20 +26,17 @@
 // 1 <= n <= 100
 // -100 <= matrix[i][j] <= 100
 
-package main
-
-func minFallingPathSum(matrix [][]int) int {
-	n := len(matrix)
-	for i := n - 2; i >= 0; i-- {
-		for j := 0; j < n; j++ {
-			if j == 0 {
-				matrix[i][j] += MinArr([]int{matrix[i+1][j], matrix[i+1][j+1]})
-			} else if j == n-1 {
-				matrix[i][j] += MinArr([]int{matrix[i+1][j-1], matrix[i+1][j]})
-			} else {
-				matrix[i][j] += MinArr([]int{matrix[i+1][j-1], matrix[i+1][j], matrix[i+1][j+1]})
-			}
-		}
-	}
-	return MinArr(matrix[0])
-}
+function minFallingPathSum(matrix: number[][]): number {
+  for (let i = matrix.length - 2; i >= 0; i--) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (j === 0) {
+        matrix[i][j] += Math.min(matrix[i + 1][j], matrix[i + 1][j + 1]);
+      } else if (j === matrix[i].length - 1) {
+        matrix[i][j] += Math.min(matrix[i + 1][j], matrix[i + 1][j - 1]);
+      } else {
+        matrix[i][j] += Math.min(matrix[i + 1][j], matrix[i + 1][j + 1], matrix[i + 1][j - 1]);
+      }
+    }
+  }
+  return Math.min(...matrix[0]);
+};
