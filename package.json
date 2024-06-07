@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "cd": "^0.3.3",
+    "lodash": "^4.17.21",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0"
   }
 }
