@@ -1,12 +1,20 @@
 export function ispalindromicString(s: string): boolean {
-  let left = 0;
-  let right = s.length - 1;
-  while (left < right) {
-    if (s[left] !== s[right]) {
-      return false;
+    let left = 0;
+    let right = s.length - 1;
+    while (left < right) {
+        if (s[left] !== s[right]) {
+            return false;
+        }
+        left++;
+        right--;
     }
-    left++;
-    right--;
-  }
-  return true;
+    return true;
+}
+
+export function getLastChar(str): string {
+    return str.slice(-1);
+}
+
+export function getFirstChar(str): string {
+    return str.charAt(0);
 }

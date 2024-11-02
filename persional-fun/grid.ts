@@ -8,5 +8,5 @@ function grid(init: number, percent: number, max: number): number {
     return result;
 }
 
-console.log(grid(60000, 0.5, 1000));
+console.log('ikgk/.k');
 
